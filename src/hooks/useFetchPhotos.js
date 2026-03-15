@@ -11,7 +11,7 @@ export function useFetchPhotos() {
     setLoading(true);
     setError(null);
 
-    fetch('https://picsum.photos/v2/list?limit=30')
+    fetch('https://picsum.photos/v2/list?limit=40')
       .then((res) => {
         if (!res.ok) throw new Error(`Request failed with status ${res.status}`);
         return res.json();
